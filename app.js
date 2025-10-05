@@ -20,6 +20,10 @@ mongoose
       res.send("<h1>🚀 Node.js app running successfully!</h1>");
     });
 
+    // Api test
+    app.get("/test", (req, res) => res.send("Test route works!"));
+
+
     // Start server
     app.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
