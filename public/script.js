@@ -31,7 +31,7 @@ form.addEventListener("submit", async (e) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email })
-    });
+    }); 
     const data = await res.json();
     alert(data.message || "User added!");
     form.reset();
